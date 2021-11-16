@@ -17,6 +17,7 @@ import org.vaadin.barcodes.Barcode;
 import com.vaadin.flow.component.ComponentEventListener;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.grid.Grid.SelectionMode;
+import com.vaadin.flow.component.html.Div;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -59,13 +60,17 @@ public class FilesystemView extends VerticalLayout //
 
 	public FilesystemView() {
 		HorizontalLayout header = new HorizontalLayout();
+		header.setWidthFull();
 		// Defaults defaults
-		Barcode qrcode = new Barcode("https://antonius.herokuapp.com/",
+		Barcode qrcode = new Barcode("https://antonius.herokuapp.com/filesystem",
 		        Barcode.Type.qrcode,
 		        "100px",
 		        "100px");
+		Div cont = new Div();
+		cont.add(qrcode);
 		
-		header.add(new H1("Files"), qrcode);
+		header.add(new H1("Files"), cont);
+		cont.getStyle().set("margin-left", "auto");
 		add(header);
 
 	}

@@ -8,7 +8,7 @@ import com.vaadin.flow.router.Route;
 @Route("minesweeper")
 public class MinesweeperView extends VerticalLayout implements HasDynamicTitle {
 	/**
-	 * 
+	 * {@value #serialVersionUID}
 	 */
 	private static final long serialVersionUID = 1L;
 
@@ -19,7 +19,6 @@ public class MinesweeperView extends VerticalLayout implements HasDynamicTitle {
 
 	@Override
 	public String getPageTitle() {
-		// TODO Auto-generated method stub
 		return "Minesweeper";
 	}
 }
