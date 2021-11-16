@@ -1,0 +1,5 @@
+DELEGATES_PREFERENCE=delegateValidatorList
+USER_BUILD_PREFERENCE=enabledBuildValidatorListorg.jboss.tools.common.validation.ValidatorManager;
+USER_MANUAL_PREFERENCE=enabledManualValidatorListorg.jboss.tools.common.validation.ValidatorManager;
+USER_PREFERENCE=overrideGlobalPreferencestruedisableAllValidationtrueversion1.2.801.v202007142017
+eclipse.preferences.version=1
